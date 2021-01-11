@@ -17,7 +17,7 @@ import React from "react";
     console.log('Losses: ',props.losses.length)
     return (
       <h2>
-        wins: {props.wins.length/2} losses: {props.losses.length/2} equal:{props.equal.length/2};
+        wins: {props.wins.length/2} losses: {props.losses.length/2} equal:{props.equal.length/2}
        </h2>
     );
   } else if (props.CompSumPoints === props.yourSumPoints) {
