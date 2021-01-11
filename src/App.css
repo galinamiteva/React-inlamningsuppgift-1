@@ -19,9 +19,9 @@
 }
 
 section{
-  flex-basis:45%
+  flex-basis:40%
 }
 
 button{
-  flex-basis: 10%;
+  flex-basis: 20%;
 }
