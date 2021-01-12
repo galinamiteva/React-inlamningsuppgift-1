@@ -11,9 +11,7 @@ class RollDice extends Component {
   equal = [];
   losses = [];
   wins = [];  
-  countEqual=0;
-  countWins=0;
-  countLosses=0;
+  
   static defaultProps = {
     sides: ["one", "two", "three", "four", "five", "six"]
   };
@@ -65,9 +63,7 @@ class RollDice extends Component {
     this.losses = [];
     this.wins = [];
     this.equal = [];  
-    this.countEqual=0;
-    this.countWins=0;
-    this.countLosses=0;  
+   
     this.setState({
       die1: "one",
       die2: "one",
@@ -111,9 +107,7 @@ class RollDice extends Component {
             wins={this.wins}
             losses={this.losses}
             equal={this.equal} 
-            countEqual={this.countEqual}
-            countWins={this.countWins}
-             countLosses={this.countLosses}                    
+                              
         />
       </div>
     );
