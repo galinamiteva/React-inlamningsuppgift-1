@@ -7,7 +7,7 @@ import React from "react";
     
     return (
       <h2>
-        wins: {props.wins.length/2} losses: {props.losses.length/2} equal:{props.equal.length/2}
+        wins: {Math.floor(props.wins.length/2)} losses: {Math.floor(props.losses.length/2)} equal:{Math.floor(props.equal.length/2)}
       </h2>
     );
   } else if (props.CompSumPoints > props.yourSumPoints) {
@@ -17,7 +17,7 @@ import React from "react";
     console.log('Losses: ',props.losses.length)
     return (
       <h2>
-        wins: {props.wins.length/2} losses: {props.losses.length/2} equal:{props.equal.length/2}
+        wins: {Math.floor(props.wins.length/2)} losses: {Math.floor(props.losses.length/2)} equal:{Math.floor(props.equal.length/2)}
        </h2>
     );
   } else if (props.CompSumPoints === props.yourSumPoints) {
@@ -26,13 +26,13 @@ import React from "react";
     
     return (
       <h2>
-        wins: {props.wins.length/2} losses: {props.losses.length/2} equal:{props.equal.length/2}
+        wins: {Math.floor(props.wins.length/2)} losses: {Math.floor(props.losses.length/2)} equal:{Math.floor(props.equal.length/2)}
       </h2>
     );
   } else if (props.CompSumPoints === null && props.yourSumPoints === "") {
     return (
       <h2>
-        wins: {props.wins.length/2} losses: {props.losses.length/2} equal:{props.equal.length/2}
+        wins: {Math.floor(props.wins.length/2)} losses: {Math.floor(props.losses.length/2)} equal:{Math.floor(props.equal.length/2)}
       </h2>
     );
   } else {
